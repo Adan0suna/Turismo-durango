@@ -1,0 +1,1216 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0%;
+  overflow-x: hidden;
+  cursor: move;
+}
+
+* {
+  user-select: none;
+  cursor: default;
+}
+
+.Gastronomia_Contenedor {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.Gastronomia_Fondo {
+  position: relative;
+}
+
+.Gastronomia_Fondo::before {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/Restaurantes/Restaurantes_Fondo.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  filter: brightness(70%);
+  z-index: -1;
+}
+
+.Msj_Gastronomia {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 5px;
+}
+
+.Msj_Gastronomia h1 {
+  font-size: 80px;
+  letter-spacing: 10px;
+  font-weight: 500;
+}
+
+.Msj_Gastronomia h2 {
+  margin-top: -10%;
+  font-size: 160px;
+  font-weight: 200;
+}
+
+.Msj_Fondo {
+  display: flex;
+  font-size: 20px;
+  width: 35%;
+  margin-top: -13%;
+}
+
+.Msj_Fondo p {
+  text-align: center;
+}
+
+/*=====================
+Estilos de la seccion 1
+=====================*/
+.Gastronomia_Seccion1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.Seccion1_Izq {
+  width: 50%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.Seccion1_Cuadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  border-radius: 20px;
+  background-color: white;
+  width: 80%;
+  height: auto;
+  margin-top: -5%;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.8));
+}
+
+.Gastronomia_Titulos {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.Gastronomia_Titulos h3 {
+  font-size: 40px;
+  margin: 0%;
+}
+
+.Gastronomia_Titulos p {
+  margin: 0%;
+}
+
+.Seccion1_Der {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.Seccion1_Img_Gastronomia {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.Seccion1_Imagen2_Gastronomia {
+  position: absolute;
+  margin-top: 15%;
+  margin-right: -40%;
+  overflow: hidden;
+}
+
+/*=====================
+Estilos de la seccion 2
+=====================*/
+.Gastronomia_Seccion2 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gallery-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 9;
+  margin-left: 25%;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* Evita que el filtro sobresalga */
+}
+
+.gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7); /* 🔥 Aplica el brillo a la imagen de fondo */
+  transition: filter 0.3s ease-in-out;
+  z-index: -1; /* Para que el contenido quede encima */
+  border-radius: 10px;
+}
+
+.overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.overlay h3 {
+  font-size: 200px;
+  font-weight: 600;
+  line-height: 1;
+  font-family: "Corinthia";
+  width: 40%;
+}
+/*=======================
+Estilos de la seccion 2-2
+=======================*/
+.Gastronomia_Seccion2-2 {
+  background-color: #131313;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.Seccion2-2_Izq {
+  width: 50%;
+  height: 80%;
+}
+
+.Seccion2-2_Titulo {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.Seccion2-2_Titulo h4 {
+  font-size: 60px;
+  margin: 0%;
+}
+
+.Seccion2-2_Tarjetas_Platillos {
+  display: grid;
+  gap: 22px;
+  padding-top: 80px;
+  height: auto;
+}
+
+.Tarjeta_Platillos {
+  display: flex;
+  align-items: center;
+  width: auto;
+  gap: 15px;
+  margin: 0%;
+}
+
+.Img_Tarjeta_Platillos {
+  border-radius: 20px;
+}
+
+.Platillos_Nombre {
+  color: white;
+}
+
+.Platillos_Nombre h5 {
+  font-size: 40px;
+  font-weight: 200;
+  margin: 0%;
+}
+
+.Platillos_Nombre p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.Raya {
+  margin-top: 12%;
+  width: 2px;
+  height: 65%;
+  background-color: white;
+}
+
+.Seccion2-2_Der {
+  padding-left: 40px;
+  height: 80%;
+  gap: 50px;
+}
+
+.Seccion2-2_Tarjetas_Platillos2 {
+  display: grid;
+  gap: 30px;
+  padding-top: 80px;
+}
+
+.Platillos_Imagen {
+  margin: 0%;
+}
+
+/*=====================
+Estilos de la seccion 3
+=====================*/
+.Gastronomia_Seccion3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.Seccion3_Titulo {
+  background-color: white;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.8));
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  margin-top: -4%;
+}
+
+.Seccion3_Titulo h6 {
+  font-size: 600%;
+  margin: 0%;
+}
+
+.Seccion3_Tarjeta1 {
+  background-color: #222222;
+  display: flex;
+  width: 90%;
+  height: 550px;
+}
+
+.Bebidas_Info {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  color: white;
+  padding-right: 60px;
+  width: 70%;
+}
+
+.Postres_Nombre {
+  transform: rotate(-90deg);
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Postres_Nombre h6 {
+  font-size: 700%;
+}
+
+.Postres_Descripcion {
+  font-size: 21px;
+}
+
+.Postres_Nombre2 {
+  transform: rotate(90deg);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Postres_Nombre2 h6 {
+  font-size: 700%;
+  text-align: center;
+  line-height: 1;
+}
+
+.Bebidas_Info2 {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  color: white;
+  padding-left: 60px;
+  width: 70%;
+}
+
+.Postres_Descripcion2 {
+  font-size: 21px;
+  text-align: right;
+}
+
+.Postres_Nombre3 {
+  transform: rotate(-90deg);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Postres_Nombre3 h6 {
+  font-size: 600%;
+  text-align: center;
+  line-height: 1;
+}
+
+.Bebidas_Img {
+  display: flex;
+  width: 30%;
+  height: auto;
+}
+
+/*=====================
+Estilos de la seccion 4
+=====================*/
+.Gastronomia_Seccion4 {
+  background-color: #131313;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Seccion4_Titulo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+  color: white;
+}
+
+.Seccion4_Titulo1 h6 {
+  font-family: "Corinthia";
+  font-size: 190px;
+  margin: 0%;
+  text-align: center;
+}
+
+.Seccion4_Raya {
+  background-color: white;
+  width: 15%;
+  height: 2px;
+  margin: 0%;
+}
+
+.Seccion4_Titulo2 {
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Seccion4_Titulo2 h6 {
+  width: 90%;
+  font-size: 100px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0%;
+}
+
+.Seccion4_Restaurantes {
+  display: flex;
+  width: 100%;
+  height: 135vh;
+}
+
+.Restaurantes_Izq {
+  background-color: #1b1b1b;
+  width: 70%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  gap: 40px;
+}
+
+.Restaurantes_Tarjetas {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  height: 45%;
+  width: 82%;
+  overflow: hidden;
+}
+
+.Imagen_Restaurantes {
+  width: 100%;
+  height: 100%;
+}
+
+.Img_Restaurantes {
+  border-radius: 40px;
+  filter: brightness(50%);
+  width: 100%;
+  height: 100%;
+}
+
+.Info_Restaurantes {
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+  font-size: 70px;
+}
+
+.Info_Restaurantes h6 {
+  font-weight: 300;
+  font-size: 100px;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.Restaurantes_Der {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Imagen_Chef {
+  margin-top: -5%;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Img_Chef {
+  border-radius: 170px;
+  width: 90%;
+  height: 100%;
+}
+
+.Seccion4_Raya2 {
+  background-color: white;
+  height: 2px;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.Seccion4_TarjetasR {
+  background-color: #131313;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Seccion4_TR {
+  display: flex;
+  width: 100%;
+  height: 75%;
+  margin-top: 5%;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1440px) {
+  .Msj_Gastronomia h1 {
+    font-size: 70px;
+  }
+
+  .Msj_Gastronomia h2 {
+    font-size: 140px;
+  }
+
+  .Msj_Fondo {
+    font-size: 18px;
+    width: 40%;
+  }
+
+  .Gastronomia_Titulos h3 {
+    font-size: 35px;
+  }
+
+  .overlay h3 {
+    font-size: 160px;
+  }
+
+  .Seccion2-2_Titulo h4 {
+    font-size: 50px;
+  }
+
+  .Platillos_Nombre h5 {
+    font-size: 35px;
+  }
+
+  .Seccion3_Titulo h6 {
+    font-size: 500%;
+  }
+
+  .Postres_Nombre h6,
+  .Postres_Nombre2 h6,
+  .Postres_Nombre3 h6 {
+    font-size: 600%;
+  }
+
+  .Seccion4_Titulo1 h6 {
+    font-size: 160px;
+  }
+
+  .Seccion4_Titulo2 h6 {
+    font-size: 80px;
+  }
+
+  .Info_Restaurantes h6 {
+    font-size: 80px;
+  }
+
+  .Info_Restaurantes {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Msj_Gastronomia h1 {
+    font-size: 60px;
+  }
+
+  .Msj_Gastronomia h2 {
+    font-size: 120px;
+  }
+
+  .Msj_Fondo {
+    font-size: 16px;
+    width: 50%;
+  }
+
+  .Gastronomia_Titulos h3 {
+    font-size: 30px;
+  }
+
+  .overlay h3 {
+    font-size: 140px;
+    width: 60%;
+  }
+
+  .Seccion2-2_Titulo h4 {
+    font-size: 40px;
+  }
+
+  .Platillos_Nombre h5 {
+    font-size: 30px;
+  }
+
+  .Platillos_Nombre p {
+    font-size: 18px;
+  }
+
+  .Seccion3_Titulo h6 {
+    font-size: 400%;
+  }
+
+  .Postres_Nombre h6,
+  .Postres_Nombre2 h6,
+  .Postres_Nombre3 h6 {
+    font-size: 500%;
+  }
+
+  .Postres_Descripcion,
+  .Postres_Descripcion2 {
+    font-size: 18px;
+  }
+
+  .Seccion4_Titulo1 h6 {
+    font-size: 140px;
+  }
+
+  .Seccion4_Titulo2 h6 {
+    font-size: 70px;
+  }
+
+  .Info_Restaurantes h6 {
+    font-size: 70px;
+  }
+
+  .Info_Restaurantes {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Msj_Gastronomia h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .Msj_Gastronomia h2 {
+    font-size: 100px;
+  }
+
+  .Msj_Fondo {
+    font-size: 14px;
+    width: 60%;
+  }
+
+  .Gastronomia_Seccion1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Seccion1_Izq,
+  .Seccion1_Der {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .Seccion1_Cuadro {
+    margin-top: 0;
+    width: 90%;
+  }
+
+  .Seccion1_Imagen2_Gastronomia {
+    position: relative;
+    margin: 20px 0;
+    margin-right: 0;
+  }
+
+  .gallery-container {
+    margin-left: 0;
+  }
+
+  .overlay h3 {
+    font-size: 120px;
+    width: 70%;
+  }
+
+  .Gastronomia_Seccion2-2 {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .Seccion2-2_Izq,
+  .Seccion2-2_Der {
+    width: 100%;
+    height: auto;
+  }
+
+  .Raya {
+    width: 80%;
+    height: 2px;
+    margin: 30px auto;
+  }
+
+  .Seccion2-2_Der {
+    padding-left: 0;
+  }
+
+  .Seccion3_Titulo {
+    width: 80%;
+  }
+
+  .Seccion3_Titulo h6 {
+    font-size: 300%;
+  }
+
+  .Seccion3_Tarjeta1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Bebidas_Info,
+  .Bebidas_Info2 {
+    width: 100%;
+    padding: 30px;
+    order: 2;
+  }
+
+  .Bebidas_Img {
+    width: 100%;
+    order: 1;
+  }
+
+  .Postres_Nombre {
+    transform: rotate(-90deg);
+    width: 20%;
+  }
+  
+  .Postres_Nombre2 {
+    transform: rotate(90deg);
+    width: 30%;
+  }
+  
+  .Postres_Nombre3 {
+    transform: rotate(-90deg);
+    width: 30%;
+  }
+
+  .Postres_Nombre h6,
+  .Postres_Nombre2 h6,
+  .Postres_Nombre3 h6 {
+    font-size: 400%;
+  }
+
+  .Postres_Descripcion2 {
+    text-align: left;
+  }
+
+  .Seccion4_Titulo1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Seccion4_Titulo1 h6 {
+    font-size: 120px;
+  }
+
+  .Seccion4_Raya {
+    width: 50%;
+  }
+
+  .Seccion4_Titulo2 h6 {
+    font-size: 50px;
+  }
+
+  .Seccion4_Restaurantes {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Restaurantes_Izq,
+  .Restaurantes_Der {
+    width: 100%;
+    height: auto;
+  }
+
+  .Restaurantes_Tarjetas {
+    width: 90%;
+    height: auto;
+  }
+
+  .Info_Restaurantes {
+    width: 70%;
+  }
+
+  .Info_Restaurantes h6 {
+    font-size: 50px;
+  }
+
+  .Imagen_Chef {
+    margin: 30px 0;
+    height: 500px;
+  }
+
+  .Seccion4_TR {
+    height: auto;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Msj_Gastronomia h1 {
+    font-size: 40px;
+  }
+
+  .Msj_Gastronomia h2 {
+    font-size: 80px;
+  }
+
+  .Msj_Fondo {
+    font-size: 12px;
+    width: 70%;
+  }
+
+  .Gastronomia_Titulos h3 {
+    font-size: 25px;
+  }
+
+  .overlay h3 {
+    font-size: 100px;
+    width: 80%;
+  }
+
+  .Seccion2-2_Titulo h4 {
+    font-size: 35px;
+  }
+
+  .Platillos_Nombre h5 {
+    font-size: 25px;
+  }
+
+  .Platillos_Nombre p {
+    font-size: 16px;
+  }
+
+  .Seccion3_Titulo h6 {
+    font-size: 250%;
+  }
+
+  .Postres_Nombre h6,
+  .Postres_Nombre2 h6,
+  .Postres_Nombre3 h6 {
+    font-size: 300%;
+  }
+
+  .Postres_Descripcion,
+  .Postres_Descripcion2 {
+    font-size: 16px;
+  }
+
+  .Seccion4_Titulo1 h6 {
+    font-size: 100px;
+  }
+
+  .Seccion4_Titulo2 h6 {
+    font-size: 40px;
+  }
+
+  .Info_Restaurantes {
+    width: 80%;
+  }
+
+  .Info_Restaurantes h6 {
+    font-size: 40px;
+  }
+
+  .Info_Restaurantes {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Msj_Gastronomia h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .Msj_Gastronomia h2 {
+    font-size: 60px;
+  }
+
+  .Msj_Fondo {
+    font-size: 11px;
+    width: 80%;
+  }
+
+  .Gastronomia_Titulos h3 {
+    font-size: 22px;
+  }
+
+  .Gastronomia_Titulos p {
+    font-size: 14px;
+  }
+
+  .overlay h3 {
+    font-size: 80px;
+    width: 90%;
+  }
+
+  .Seccion2-2_Titulo h4 {
+    font-size: 30px;
+  }
+
+  .Platillos_Nombre h5 {
+    font-size: 22px;
+  }
+
+  .Platillos_Nombre p {
+    font-size: 14px;
+  }
+
+  .Seccion3_Titulo {
+    width: 90%;
+  }
+
+  .Seccion3_Titulo h6 {
+    font-size: 200%;
+  }
+
+  .Postres_Nombre h6,
+  .Postres_Nombre2 h6,
+  .Postres_Nombre3 h6 {
+    font-size: 250%;
+  }
+
+  .Postres_Descripcion,
+  .Postres_Descripcion2 {
+    font-size: 14px;
+  }
+
+  .Seccion4_Titulo1 h6 {
+    font-size: 80px;
+  }
+
+  .Seccion4_Titulo2 h6 {
+    font-size: 30px;
+  }
+
+  .Info_Restaurantes {
+    width: 85%;
+  }
+
+  .Info_Restaurantes h6 {
+    font-size: 30px;
+  }
+
+  .Imagen_Chef {
+    height: 400px;
+  }
+
+  .chef-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Msj_Gastronomia h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .Msj_Gastronomia h2 {
+    font-size: 48px;
+  }
+
+  .Msj_Fondo {
+    font-size: 10px;
+    width: 90%;
+  }
+
+  .Gastronomia_Titulos h3 {
+    font-size: 20px;
+  }
+
+  .overlay h3 {
+    font-size: 60px;
+  }
+
+  .Seccion2-2_Titulo h4 {
+    font-size: 25px;
+  }
+
+  .Platillos_Nombre h5 {
+    font-size: 20px;
+  }
+
+  .Platillos_Nombre p {
+    font-size: 12px;
+  }
+
+  .Seccion3_Titulo h6 {
+    font-size: 150%;
+  }
+
+  .Postres_Nombre h6,
+  .Postres_Nombre2 h6,
+  .Postres_Nombre3 h6 {
+    font-size: 200%;
+  }
+
+  .Postres_Descripcion,
+  .Postres_Descripcion2 {
+    font-size: 12px;
+  }
+
+  .Seccion4_Titulo1 h6 {
+    font-size: 60px;
+  }
+
+  .Seccion4_Titulo2 h6 {
+    font-size: 24px;
+  }
+
+  .Info_Restaurantes {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .Info_Restaurantes h6 {
+    font-size: 24px;
+  }
+
+  .Imagen_Chef {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Seccion1_Cuadro {
+    padding: 40px 20px;
+    height: auto;
+  }
+  
+  .Gastronomia_Titulos {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Seccion1_Cuadro {
+    padding: 30px 15px;
+  }
+  
+  .Gastronomia_Titulos {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.Seccion4_TR_Carousel {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Seccion4_TR_Carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.Seccion4_TR_Carousel::-webkit-scrollbar-track {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+.Seccion4_TR_Carousel::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 992px) {
+  .Seccion4_TR {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .Seccion4_TR_Carousel {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  
+  .Seccion4_TR_Carousel > * {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+  }
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: auto;
+  scroll-snap-align: start;
+}
+@media screen and (max-width: 1440px) {
+  .Info_Restaurantes h6 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Info_Restaurantes h6 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Info_Restaurantes {
+    width: 70%;
+  }
+  
+  .Info_Restaurantes h6 {
+    font-size: 50px;
+  }
+  
+  .Seccion4_TR_Carousel > * {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Info_Restaurantes {
+    width: 80%;
+  }
+  
+  .Info_Restaurantes h6 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Info_Restaurantes {
+    width: 85%;
+  }
+  
+  .Info_Restaurantes h6 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Info_Restaurantes {
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .Info_Restaurantes h6 {
+    font-size: 24px;
+  }
+}

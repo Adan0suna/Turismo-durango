@@ -1,0 +1,164 @@
+/*========
+Contenedor
+========*/
+.Barra {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-content: center;
+  width: 100%;
+  background-color: transparent;
+  z-index: 99;
+  font-style: none;
+  margin-top: 30px;
+}
+
+/*===
+Links
+===*/
+.Opciones {
+  display: flex;
+  gap: 40px;
+  height: 100%;
+  width: 80%;
+  align-content: end;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.opcion {
+  color: white;
+  position: relative;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.centro {
+  font-size: 16px;
+}
+
+.medio {
+  font-size: 15px;
+}
+
+.final {
+  font-size: 14px;
+}
+
+/*===================
+Estilos Iconos y Logo
+===================*/
+.Perfil {
+  color: white;
+  font-size: 30px;
+}
+
+.Img_Logo {
+  margin-top: -10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.Contenedor_Perfil {
+  width: 10%;
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+  .Opciones {
+    gap: 30px;
+    width: 90%;
+  }
+
+  .centro {
+    font-size: 15px;
+  }
+
+  .medio {
+    font-size: 14px;
+  }
+
+  .final {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Opciones {
+    gap: 20px;
+    width: 95%;
+  }
+
+  .centro {
+    font-size: 14px;
+  }
+
+  .medio {
+    font-size: 13px;
+  }
+
+  .final {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Barra {
+    margin-top: 20px;
+  }
+
+  .Opciones {
+    gap: 15px;
+    width: 100%;
+  }
+
+  .Img_Logo {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Barra {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 0;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .Opciones {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0 20px 0;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .Opciones > div:not(.Img_Logo) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .Img_Logo {
+    position: absolute;
+    top: 10px;
+    margin-top: 0;
+  }
+
+  /* Class to be toggled with JavaScript */
+  .Barra.menu-open .Opciones {
+    max-height: 500px;
+  }
+
+  .Barra.menu-open .Opciones > div:not(.Img_Logo) {
+    opacity: 1;
+  }
+}

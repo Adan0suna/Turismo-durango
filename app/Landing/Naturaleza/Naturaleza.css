@@ -1,0 +1,143 @@
+body {
+    margin: 0%;
+    overflow-x: hidden;
+}
+  
+.Naturaleza_Fondo {
+    position: relative;
+}
+   
+.Naturaleza_Fondo::before {
+    content: "";
+    position: absolute;
+    background-image: url("/assets/Naturaleza/Naturaleza_Fondo.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.Msj_Naturaleza {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 5px;
+}
+
+.Msj_Naturaleza h1 {
+    font-size: 60px;
+    letter-spacing: 20px;
+    font-weight: 600;
+    margin: 0%;
+    text-align: center;
+}
+
+.Msj_Naturaleza h2 {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0%;
+}
+
+.Msj_Naturaleza h3 {
+    font-size: 170px;
+    font-weight: 200;
+    margin: -3%;
+    text-align: center;
+}
+
+/* Responsive styles for the header section */
+@media screen and (max-width: 1440px) {
+    .Msj_Naturaleza h1 {
+        font-size: 55px;
+        letter-spacing: 18px;
+    }
+    
+    .Msj_Naturaleza h2 {
+        font-size: 55px;
+    }
+    
+    .Msj_Naturaleza h3 {
+        font-size: 150px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Msj_Naturaleza h1 {
+        font-size: 50px;
+        letter-spacing: 15px;
+    }
+    
+    .Msj_Naturaleza h2 {
+        font-size: 50px;
+    }
+    
+    .Msj_Naturaleza h3 {
+        font-size: 130px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Msj_Naturaleza h1 {
+        font-size: 40px;
+        letter-spacing: 12px;
+    }
+    
+    .Msj_Naturaleza h2 {
+        font-size: 40px;
+    }
+    
+    .Msj_Naturaleza h3 {
+        font-size: 110px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Msj_Naturaleza h1 {
+        font-size: 32px;
+        letter-spacing: 8px;
+    }
+    
+    .Msj_Naturaleza h2 {
+        font-size: 32px;
+    }
+    
+    .Msj_Naturaleza h3 {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Msj_Naturaleza h1 {
+        font-size: 24px;
+        letter-spacing: 5px;
+    }
+    
+    .Msj_Naturaleza h2 {
+        font-size: 24px;
+    }
+    
+    .Msj_Naturaleza h3 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Msj_Naturaleza h1 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    
+    .Msj_Naturaleza h2 {
+        font-size: 20px;
+    }
+    
+    .Msj_Naturaleza h3 {
+        font-size: 60px;
+    }
+}

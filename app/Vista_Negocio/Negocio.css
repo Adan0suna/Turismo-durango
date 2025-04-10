@@ -1,0 +1,759 @@
+body {
+  margin: 0%;
+  overflow-x: hidden;
+}
+
+.Negocio_Fondo {
+  position: relative;
+}
+
+.Negocio_Fondo::before {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/Negocio/Negocio_Fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 65vh;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.Msj_Negocio {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 5px;
+}
+
+.Msj_Negocio h1 {
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  width: 50%;
+  line-height: 1;
+  text-align: center;
+}
+
+.Negocio_Seccion1 {
+  width: 100%;
+  height: 80vh;
+  padding-left: 1%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+}
+
+.Negocio_Seccion1_Izq {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -15%;
+}
+
+.Seccion1N_Redes {
+  background-color: #1b1b1b;
+  width: 50%;
+  height: 70px;
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  padding-top: 10px;
+  align-self: flex-start; /* Keep attached to the edge */
+  margin-left: 25%; /* Center it */
+}
+
+.Negocio_Redes {
+  color: white;
+  font-size: 40px;
+}
+
+.Seccion1_Abierto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Seccion1_Abierto h2 {
+  font-size: 65px;
+  margin: 0%;
+}
+
+.Seccion1_Horario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Seccion1_Horario h2 {
+  font-weight: 300;
+  font-size: 25px;
+  margin: 0%;
+}
+
+.Seccion1_Horario2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.Seccion1_Horario2 h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.Raya_Horario {
+  width: 15%;
+  height: 2px;
+  background-color: black;
+}
+
+.Seccion1_NegocioInfo {
+  width: 80%;
+}
+
+.Seccion1_NegocioInfo p {
+  font-size: 18px;
+}
+
+.Seccion1_NegocioCalf {
+  background-color: #1b1b1b;
+  width: 50%;
+  height: 70px;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  color: white;
+  font-size: 40px;
+  align-self: flex-end; /* Keep attached to the edge */
+  margin-right: 25%; /* Center it */
+}
+
+.Negocio_Seccion1_Der {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Mapa_Contenedor {
+  background-color: aqua;
+  width: 90%;
+  height: 95%;
+}
+
+.Negocio_Seccion2 {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+}
+
+.Negocio_Seccion2_Izq {
+  width: 100%;
+}
+
+.Conocenos {
+  background-color: #1b1b1b;
+  height: 15%;
+  color: white;
+  border-radius: 30px 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Conocenos h2 {
+  margin: 0;
+  font-size: 75px;
+  font-weight: 500;
+}
+
+.Msj_Menu {
+  display: flex;
+  justify-content: center;
+}
+
+.Msj_Menu h3 {
+  width: 90%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.Galeria_Menu_Contenedor {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  width: 50%;
+  position: absolute;
+  padding-left: 5px;
+  scrollbar-width: none;
+}
+
+.Galeria_Menu_Contenedor::-webkit-scrollbar {
+  display: none;
+}
+
+.Negocio_Seccion3 {
+  width: 100%;
+  height: 55vh;
+  background-color: #131313;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Seccion3_Izq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.Seccion3_Izq h4 {
+  color: white;
+  font-size: 90px;
+  margin: 0%;
+  font-weight: 400;
+}
+
+.Seccion3_Comentario {
+  height: 80%;
+  display: flex;
+}
+
+.Contenedor_InputEstrellas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 25%;
+}
+
+.Caja_Comentario {
+  background-color: #1b1b1b;
+  border-radius: 30px;
+  border: none;
+  width: 70%;
+  height: 70%;
+  padding: 20px;
+  padding-right: 80px;
+  color: white;
+  resize: none;
+  box-shadow: 20px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.Caja_Comentario:focus {
+  outline: none;
+}
+
+.Comentario_Botones {
+  color: white;
+  display: grid;
+  align-content: space-between;
+  font-size: 35px;
+  margin-left: -8%;
+  padding-top: 15px;
+  height: 75%;
+}
+
+.Btn_Enviar_Comentario {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 35px;
+}
+
+.Btn_Añadir_Imagen {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Imagen_Input {
+  display: none;
+}
+
+.Clip_Icono {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.Previsualizacion_Img {
+  position: relative;
+  display: inline-block;
+}
+
+.Prev_Imagen {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+.Eliminar_Imagen {
+  position: absolute;
+  margin-top: -5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(134, 27, 27);
+}
+
+.Negocio_Seccion4 {
+  background-color: transparent;
+  width: 100%;
+  height: 80vh;
+  background-color: #131313;
+  overflow: hidden;
+}
+
+.Seccion4_sombra {
+  width: 100%;
+  height: 2px;
+  background-color: #131313;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 1);
+}
+
+.Negocio_Comentarios {
+  width: 100%;
+  height: 70%;
+  padding: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-top: 3%;
+  scrollbar-width: none;
+}
+
+.Negocio_Comentarios::-webkit-scrollbar {
+  display: none;
+}
+
+.Negocio_Comentarios_Contenedor {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1440px) {
+  .Msj_Negocio h1 {
+    font-size: 80px;
+    width: 60%;
+  }
+
+  .Seccion1_Abierto h2 {
+    font-size: 55px;
+  }
+
+  .Seccion1_Horario2 h2 {
+    font-size: 35px;
+  }
+
+  .Negocio_Redes {
+    font-size: 35px;
+  }
+
+  .Seccion1_NegocioCalf {
+    font-size: 35px;
+  }
+
+  .Conocenos h2 {
+    font-size: 65px;
+  }
+
+  .Seccion3_Izq h4 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Msj_Negocio h1 {
+    font-size: 70px;
+    width: 70%;
+  }
+
+  .Seccion1N_Redes {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .Seccion1_Abierto h2 {
+    font-size: 50px;
+  }
+
+  .Seccion1_Horario h2 {
+    font-size: 22px;
+  }
+
+  .Seccion1_Horario2 h2 {
+    font-size: 30px;
+  }
+
+  .Seccion1_NegocioInfo p {
+    font-size: 16px;
+  }
+
+  .Seccion1_NegocioCalf {
+    width: 60%;
+    margin-right: 20%;
+  }
+
+  .Conocenos h2 {
+    font-size: 55px;
+  }
+
+  .Galeria_Menu_Contenedor {
+    width: 60%;
+  }
+
+  .Seccion3_Izq h4 {
+    font-size: 70px;
+  }
+
+  .Comentario_Botones {
+    font-size: 30px;
+  }
+
+  .Btn_Enviar_Comentario {
+    font-size: 30px;
+  }
+
+  .Clip_Icono {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Msj_Negocio h1 {
+    font-size: 60px;
+    width: 80%;
+  }
+
+  .Negocio_Seccion1 {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .Negocio_Seccion1_Izq {
+    margin-top: -10%;
+    padding: 20px 0;
+  }
+
+  .Seccion1N_Redes {
+    align-self: center;
+    margin-left: 0;
+  }
+
+  .Seccion1_NegocioCalf {
+    align-self: center;
+    margin-right: 0;
+  }
+
+  .Negocio_Seccion1_Der {
+    padding: 40px 0;
+  }
+
+  .Mapa_Contenedor {
+    height: 400px;
+  }
+
+  .Negocio_Seccion2 {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .Negocio_Seccion2_Izq {
+    height: auto;
+  }
+
+  .Conocenos {
+    border-radius: 30px 30px 0 0;
+    height: 100px;
+    text-align: center;
+  }
+
+  .Conocenos h2 {
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .Msj_Menu {
+    text-align: center;
+  }
+
+  .Msj_Menu h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Galeria_Menu_Contenedor {
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .Negocio_Seccion3 {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .Seccion3_Izq {
+    padding: 20px;
+  }
+
+  .Seccion3_Izq h4 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .Seccion3_Der {
+    padding: 20px;
+  }
+
+  .Contenedor_InputEstrellas {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Caja_Comentario {
+    width: 80%;
+    height: 150px;
+  }
+
+  .Negocio_Seccion4 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Msj_Negocio h1 {
+    font-size: 50px;
+    width: 90%;
+    letter-spacing: 5px;
+  }
+
+  .Seccion1N_Redes {
+    width: 70%;
+  }
+
+  .Seccion1_Abierto h2 {
+    font-size: 45px;
+  }
+
+  .Seccion1_Horario h2 {
+    font-size: 20px;
+  }
+
+  .Seccion1_Horario2 h2 {
+    font-size: 28px;
+  }
+
+  .Seccion1_NegocioCalf {
+    width: 70%;
+  }
+
+  .Conocenos h2 {
+    font-size: 40px;
+  }
+
+  .Seccion3_Izq h4 {
+    font-size: 50px;
+  }
+
+  .Caja_Comentario {
+    width: 85%;
+    padding-right: 40px;
+  }
+
+  .Comentario_Botones {
+    font-size: 25px;
+    margin-left: -10%;
+  }
+
+  .Btn_Enviar_Comentario {
+    font-size: 25px;
+  }
+
+  .Clip_Icono {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Msj_Negocio h1 {
+    font-size: 40px;
+    width: 95%;
+    letter-spacing: 3px;
+  }
+
+  .Negocio_Seccion1_Izq {
+    margin-top: -15%;
+    border-radius: 30px;
+  }
+
+  .Seccion1N_Redes {
+    width: 80%;
+    height: 60px;
+  }
+
+  .Negocio_Redes {
+    font-size: 30px;
+  }
+
+  .Seccion1_Abierto h2 {
+    font-size: 40px;
+  }
+
+  .Seccion1_Horario h2 {
+    font-size: 18px;
+  }
+
+  .Seccion1_Horario2 h2 {
+    font-size: 24px;
+  }
+
+  .Raya_Horario {
+    width: 20%;
+  }
+
+  .Seccion1_NegocioInfo {
+    width: 90%;
+  }
+
+  .Seccion1_NegocioInfo p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .Seccion1_NegocioCalf {
+    width: 80%;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .Mapa_Contenedor {
+    height: 300px;
+    width: 95%;
+  }
+
+  .Conocenos h2 {
+    font-size: 35px;
+  }
+
+  .Msj_Menu h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .Seccion3_Izq h4 {
+    font-size: 40px;
+  }
+
+  .Caja_Comentario {
+    width: 90%;
+    padding: 15px;
+    padding-right: 40px;
+    border-radius: 20px;
+  }
+
+  .Comentario_Botones {
+    font-size: 22px;
+    margin-left: -12%;
+  }
+
+  .Btn_Enviar_Comentario {
+    font-size: 22px;
+  }
+
+  .Clip_Icono {
+    font-size: 22px;
+  }
+
+  .Prev_Imagen {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Msj_Negocio h1 {
+    font-size: 32px;
+  }
+
+  .Seccion1N_Redes {
+    width: 90%;
+    height: 50px;
+  }
+
+  .Negocio_Redes {
+    font-size: 25px;
+  }
+
+  .Seccion1_Abierto h2 {
+    font-size: 35px;
+  }
+
+  .Seccion1_Horario h2 {
+    font-size: 16px;
+  }
+
+  .Seccion1_Horario2 h2 {
+    font-size: 22px;
+  }
+
+  .Seccion1_NegocioInfo p {
+    font-size: 12px;
+  }
+
+  .Seccion1_NegocioCalf {
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .Conocenos h2 {
+    font-size: 30px;
+  }
+
+  .Msj_Menu h3 {
+    font-size: 16px;
+  }
+
+  .Seccion3_Izq h4 {
+    font-size: 32px;
+  }
+
+  .Comentario_Botones {
+    font-size: 20px;
+  }
+
+  .Btn_Enviar_Comentario {
+    font-size: 20px;
+  }
+
+  .Clip_Icono {
+    font-size: 20px;
+  }
+}

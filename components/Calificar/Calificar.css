@@ -1,0 +1,19 @@
+.stars {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.estrellita {
+    font-size: 40px;
+    transition: color 0.2s ease-in-out;
+}
+
+.estrellita.vacia {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+.estrellita.llena {
+    color: white;
+}

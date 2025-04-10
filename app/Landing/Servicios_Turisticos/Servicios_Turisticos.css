@@ -1,0 +1,240 @@
+body {
+    background-color: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Servicios_Contenedor {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .Fondo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Fondo_SB {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+  
+  .Fondo_CB {
+    position: absolute;
+    width: 50%;
+    height: 99%;
+    margin-left: -10px;
+    overflow: hidden;
+  }
+  
+  .Img_Fondo_CB {
+    filter: blur(15px);
+  }
+  
+  .Texto {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .Servicios {
+    margin-top: 17%;
+  }
+  
+  .Turisticos {
+    margin-top: -5%;
+  }
+  
+  .Msj_1 {
+    font-size: clamp(3rem, 10vw, 7.5rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url("/assets/Login/Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-left: -55%;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+  }
+  
+  .Msj_3 {
+    font-size: clamp(5rem, 15vw, 14rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url("/assets/Login/Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+  }
+  
+  .Msj_4 {
+    font-size: clamp(5rem, 15vw, 14rem);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .Categorias {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh; /* Reduced from 100vh to 5vh to minimize the gap */
+    width: 100%;
+  }
+  
+  .Ctg_Contenedor {
+    background-color: white;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+    border-radius: 30px;
+    width: 85%;
+    display: grid;
+    padding: 1% 1%;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .Tarjeta {
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Tarjeta:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .Tarjeta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0) 90%);
+    transition: transform 0.5s ease; /* Added transition for hover effect */
+  }
+  
+  /* Zoom effect on hover for the background image */
+  .Tarjeta:hover::before {
+    transform: scale(1.1);
+  }
+  
+  .Natur::before {
+    background-image: url("/assets/ST/Naturaleza.jpg");
+  }
+  
+  .Hotel::before {
+    background-image: url("/assets/ST/Hoteleria.jpg");
+  }
+  
+  .Gastro::before {
+    background-image: url("/assets/ST/Gastronomia.jpg");
+  }
+  
+  .Histo::before {
+    background-image: url("/assets/ST/Historia.jpg");
+  }
+  
+  .colornegro {
+    background-color: black;
+    border-radius: 30px;
+    width: 100%;
+  }
+  
+  .Img_Texto {
+    position: relative;
+    color: white;
+    font-size: clamp(2rem, 5vw, 6rem);
+    font-weight: 100;
+    margin: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 0 1rem;
+    transition: transform 0.3s ease; /* Added transition for hover effect */
+  }
+  
+  /* Text effect on hover */
+  .Tarjeta:hover .Img_Texto {
+    transform: scale(1.1);
+  }
+  
+  .Img_Texto p {
+    font-weight: 400;
+  }
+  
+  .Foot1 {
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 0%;
+    padding: 0%;
+  }
+  
+  /* Media Queries */
+  @media screen and (min-width: 768px) {
+    .Ctg_Contenedor {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .Fondo_CB {
+      width: 70%;
+    }
+  
+    .Msj_1 {
+      margin-left: -30%;
+    }
+  
+    .Tarjeta {
+      height: 40vh;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .Fondo_CB {
+      width: 100%;
+    }
+  
+    .Msj_1 {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .Servicios {
+      margin-top: 30%;
+    }
+  }
+  

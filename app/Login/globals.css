@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*==========
+Estilos base
+===========*/
+body {
+  background-color: white;
+  font-family: "poppins", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*==================
+Contenedor principal
+===================*/
+.Contenedor{
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/*===============
+Estilos de Imagen
+================*/
+.Imagen {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  transition: 1.8s ease-in-out;
+}
+
+.Fondo {
+  position: relative;
+  width: 200%;
+  height: 100%;
+  left: -100%;
+}
+
+.Fondo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 200px;
+  left: -103%;
+  filter: brightness(50%);
+  transition: all 1s ease-in-out;
+}
+
+.Contenedor.active .Imagen {
+  width: 100vh;
+  left: 50%;
+}
+
+.Contenedor.active .Fondo {
+  left: 0%;
+}
+
+/*======================
+Estilos Login y Registro
+======================*/
+.Login {
+  width: 50%;
+  display: grid;
+  padding: 0;
+  margin-top: 5%;
+  transition: all 1s ease-in-out;
+}
+
+.Registro {
+  width: 50%;
+  height: 100vh;
+  display: grid;
+  position: absolute;
+  left: -100%;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  margin-top: 5%;
+}
+
+/*====================
+Estilos Cambio de Modo
+====================*/
+.Msj_Login {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  background: transparent;
+  color: white;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  right: -100%;
+  transition: all 1.8s ease-in-out;
+}
+
+.Msj_Login button {
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 20px;
+  color: white;
+  width: 53%;
+  height: 100%;
+  font-size: 300%;
+}
+
+.Msj_Registro {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  justify-items: center;
+  align-content: center;
+  transition: all 1s ease-in-out;
+}
+
+.Msj_Registro button {
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 20px;
+  color: white;
+  width: 40%;
+  height: 70px;
+  font-size: 250%;
+  transition: 0.3s;
+}
+
+.Cambio_a_registro {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Msj_Registro button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.Msj_Login button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*=================
+Texto y Formularios
+=================*/
+.Titulo {
+  justify-items: center;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h6 {
+  font-size: 400%;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  font-size: 400%;
+  color: white;
+}
+
+.lol{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  font-size: 250%;
+  color: white;
+}
+
+h5{
+  font-size: 450%;
+}
+
+.Formulario {
+  display: grid;
+  justify-items: center;
+  margin-top: -170px;
+}
+
+.Formulario2 {
+  display: grid;
+  justify-items: center;
+  margin-top: -170px;
+}
+
+.Formulario input {
+  height: 50px;
+  width: 90%;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #DCDBDB;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: -5%;
+}
+
+.Formulario2 input {
+  height: 50px;
+  width: 90%;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #DCDBDB;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: -5%;
+}
+
+.Recuperar {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin-top: -10%;
+  margin-right: -55%;
+}
+
+.Btn_Formulario {
+  background-color: #6ECEEA;
+  height: 60px;
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  font-size: 40px;
+  color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Btn_Formulario:hover {
+  background-color: #45a3c0;
+}
+
+.Btn_Formulario_R {
+  background-color: #6ECEEA;
+  height: 60px;
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  font-size: 40px;
+  color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Btn_Formulario_R:hover {
+  background-color: #45a3c0;
+}
+/*============
+Redes Sociales
+============*/
+.Redes {
+  display: grid;
+  justify-items: center;
+  margin-top: -30px;
+}
+
+.Btns_Redes {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: -70px;
+  height: 100px;
+  width: 60%;
+}
+
+.Btns_Redes button {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 80px;
+  border: none;
+  border-radius: 20px;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Google {
+  background-color: #C19BDD;
+}
+
+.Facebook {
+  background-color: #6ECEEA;
+}
+
+.Instagram {
+  background-color: #FEAEBC;
+}
+
+.Twitter {
+  background-color: #9FD5CE;
+}
+
+/*=========
+Animaciones
+=========*/
+.Contenedor.active .Login {
+  transform: translateX(200%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Contenedor.active .Registro {
+  opacity: 1;
+  left: 0;
+}
+
+.Contenedor.active .Msj_Login{
+  right: 0;
+}
+
+.Contenedor.active .Msj_Registro{
+  transform: translateX(-100%);
+}
+
+/*============
+Medias Queries
+============*/
+@media (max-width: 530px) {
+  .Contenedor {
+    flex-direction: column;
+  }
+
+  .Login {
+    margin-top: 45%;
+    width: 100%;
+    height: 50%;
+  }
+
+  .Contenedor.active .Registro {
+    opacity: 1;
+    margin-left: 0%;
+    height: 30%;
+    width: 100%;
+    margin-top: 43%;
+  }
+
+  .Msj_Registro{
+    margin-left: 0%;
+    margin-top: -50%;
+    width: 100%;
+    font-size: 70%;
+    z-index: 999;
+  }
+
+  .Msj_Registro button{
+    font-size: 200%;
+    width: 30%;
+    height: 50px;
+    margin-top: 3%;
+  }
+
+  .Msj_Login {
+    z-index: 999;
+    margin-top: -53%;
+    width: 100%;
+  }
+
+  .Msj_Login button {
+    font-size: 200%;
+    width: 40%;
+    margin-top: 10px;
+  }
+
+  .Formulario {
+    margin-top: 5%;
+    gap: 50%;
+  }
+
+  .Formulario2 {
+    display: grid;
+    gap: 40%;
+    margin-top: 1%;
+  }
+
+  .Btn_Formulario {
+    margin-top: -3%;
+  }
+
+  .Redes {
+    margin-top: 47%;
+  }
+
+  .Recuperar {
+    margin-top: -2%;
+    font-size: 15px;
+    margin-left: -15px;
+  }
+
+  .otro {
+    margin-top: -12%;
+  }
+
+  .otro2 {
+    margin-top: -10%;
+  }
+
+  .Imagen {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 99;
+    margin-top: -30%;
+  }
+
+  .Fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    margin-left: 100%;
+  }
+
+  .Fondo-img {
+    position: absolute;
+    z-index: 99;
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 200%;
+    height: 200%;
+    border-radius: 100px;
+  }
+
+  .Contenedor.active .Imagen {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .Contenedor.active .Fondo {
+    left: -100%;
+  }
+
+  .Btns_Redes {
+    width: auto;
+    gap: 20px;
+    margin-top: -10px;
+  }
+
+  .Btns_Redes button {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 110%;
+  }
+
+  h3 {
+    font-size: 300%;
+  }
+
+  h4 {
+    font-size: 180%;
+  }
+
+  h6 {
+    font-size: 260%;
+    text-align: none;
+  }
+}
+@media (max-width: 680px) and (min-width: 530px){
+  .Contenedor {
+    flex-direction: column;
+  }
+
+  .Login {
+    margin-top: 30%;
+    width: 100%;
+    height: 50%;
+  }
+
+  .Contenedor.active .Registro {
+    opacity: 1;
+    margin-left: 0%;
+    height: 30%;
+    width: 100%;
+    margin-top: 30%;
+  }
+
+  .Msj_Registro{
+    margin-left: 0%;
+    margin-top: -40%;
+    width: 100%;
+    font-size: 70%;
+    z-index: 999;
+  }
+
+  .Msj_Registro button{
+    font-size: 200%;
+    width: 20%;
+    margin-top: 3%;
+  }
+
+  .Msj_Login {
+    z-index: 999;
+    margin-top: -42%;
+    width: 100%;
+  }
+
+  .Msj_Login button {
+    font-size: 200%;
+    width: 40%;
+    margin-top: 10px;
+  }
+
+  .Formulario {
+    margin-top: 5%;
+    gap: 70%;
+  }
+
+  .Formulario2 {
+    display: grid;
+    gap: 45%;
+    margin-top: 1%;
+  }
+
+  .Btn_Formulario {
+    margin-top: -3%;
+  }
+
+  .Redes {
+    margin-top: 47%;
+    display: grid;
+  }
+
+  .Recuperar {
+    margin-top: -1%;
+  }
+
+  .otro {
+    margin-top: -12%;
+  }
+
+  .otro2 {
+    margin-top: -20%;
+  }
+
+  .Imagen {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 99;
+    margin-top: -25%;
+  }
+
+  .Fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    margin-left: 100%;
+  }
+
+  .Fondo-img {
+    position: absolute;
+    z-index: 99;
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 200%;
+    height: 200%;
+    border-radius: 170px;
+  }
+
+  .Contenedor.active .Imagen {
+    width: 100vh;
+    left: 0%;
+  }
+  
+  .Contenedor.active .Fondo {
+    left: -100%;
+  }
+
+  .Btns_Redes {
+    width: auto;
+    gap: 20px;
+    margin-top: -40px;
+  }
+
+  .Btns_Redes button {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 110%;
+  }
+
+  h3 {
+    font-size: 300%;
+  }
+
+  h4 {
+    font-size: 180%;
+  }
+
+  h6 {
+    font-size: 260%;
+    text-align: none;
+  }
+}
+
+@media (max-width: 739px) and (min-width: 681px) {
+  .Contenedor {
+    flex-direction: column;
+  }
+
+  .Login {
+    margin-top: 28%;
+    width: 100%;
+    height: 50%;
+  }
+
+  .Msj_Registro{
+    margin-left: 0%;
+    margin-top: -38%;
+    width: 100%;
+    font-size: 70%;
+    z-index: 999;
+  }
+
+  .Msj_Registro button{
+    font-size: 250%;
+    width: 25%;
+    margin-top: 3%;
+    height: 50px;
+  }
+
+  .Msj_Login {
+    z-index: 999;
+    margin-top: -40%;
+    width: 100%;
+  }
+
+  .Msj_Login button {
+    font-size: 200%;
+    width: 40%;
+    margin-top: 10px;
+  }
+
+  .Contenedor.active .Registro {
+    opacity: 1;
+    margin-left: 0%;
+    height: 30%;
+    width: 100%;
+    margin-top: 28%;
+  }
+
+  .Formulario {
+    margin-top: 5%;
+    gap: 70%;
+  }
+
+  .Formulario2 {
+    display: grid;
+    gap: 45%;
+    margin-top: 1%;
+  }
+
+  .Btn_Formulario {
+    margin-top: -3%;
+  }
+
+  .Redes {
+    margin-top: 47%;
+  }
+
+  .Recuperar {
+    margin-top: -1%;
+  }
+
+  .otro {
+    margin-top: -18%;
+  }
+
+  .otro2 {
+    margin-top: -20%;
+  }
+
+  .Imagen {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 99;
+    margin-top: -25%;
+  }
+
+  .Fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    margin-left: 100%;
+  }
+
+  .Fondo-img {
+    position: absolute;
+    z-index: 99;
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 200%;
+    height: 200%;
+    border-radius: 170px;
+  }
+
+  .Contenedor.active .Imagen {
+    width: 100vh;
+    left: 0%;
+  }
+  
+  .Contenedor.active .Fondo {
+    left: -100%;
+  }
+
+  h3 {
+    font-size: 300%;
+  }
+
+  h4 {
+    font-size: 180%;
+  }
+
+  h6 {
+    font-size: 280%;
+    text-align: none;
+  }
+}
+
+@media (max-width: 840px) and (min-width: 740px) {
+  .Recuperar {
+    margin-right: -10%;
+  }
+
+  .Formulario input {
+    width: 70%;
+  }
+
+  .Btn_Formulario {
+    width: 70%;
+  }
+
+  .Btns_Redes {
+    gap: 10px;
+  }
+
+  .Msj_Registro button {
+    font-size: 160%;
+  }
+
+  .Msj_Login button {
+    font-size: 200%;
+    width: 60%;
+    height: 80%;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 250%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  h3 {
+    font-size: 230%;
+  }
+
+  h4 {
+    font-size: 130%;
+  }
+
+  h6 {
+    font-size: 300%;
+  }
+}
+
+@media (max-width: 1093px) and (min-width:840px) {
+  .Recuperar {
+    margin-right: -25%;
+  }
+
+  .Formulario input {
+    width: 70%;
+  }
+
+  .Btn_Formulario {
+    width: 70%;
+  }
+
+  .Btns_Redes {
+    gap: 10px;
+  }
+
+  .Msj_Registro button {
+    font-size: 200%;
+  }
+
+  .Msj_Login button {
+    font-size: 250%;
+    width: 60%;
+    height: 80%;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h3 {
+    font-size: 250%;
+  }
+
+  h4 {
+    font-size: 150%;
+  }
+
+  h6 {
+    font-size: 350%;
+  }
+}
+
+@media (max-width: 1340px) and (min-width:1093px){
+  h3 {
+    font-size: 300%;
+  }
+
+  h4 {
+    font-size: 200%;
+  }
+
+  .Btns_Redes {
+    gap: 30px;
+  }
+}

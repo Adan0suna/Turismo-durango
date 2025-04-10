@@ -1,0 +1,171 @@
+body {
+    background-color: white;
+}
+
+.Fondo {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.Fondo_SB {
+    width: 100%;
+    height: 100%;
+    inset: 0;
+}
+
+.Fondo_CB {
+    position: absolute;
+    width: 50%;
+    height: 99%;
+    margin-left: -10px;
+    overflow: hidden;
+}
+
+.Img_Fondo_CB {
+    filter: blur(15px);
+}
+
+.Texto {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Servicios {
+    margin-top: 17%;
+}
+
+.Turisticos {
+    margin-top: -5%;
+}
+
+.Msj_1 {
+    font-size: 850%;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url("/assets/Login/Fondo.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    margin-left: -40%;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+}
+
+.Msj_3 {
+    font-size: 1400%;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url("/assets/Login/Fondo.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+}
+
+.Msj_2 {
+    font-size: 850%;
+    color: white;
+    font-weight: bold;
+}
+
+.Msj_4 {
+    font-size: 1400%;
+    color: white;
+    font-weight: bold;
+}
+
+.Categorias {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+    width: 100%;
+}
+
+.Ctg_Contenedor {
+    background-color: white;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+    border-radius: 20px;
+    width: 85%;
+    height: auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Encabezado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Encabezado input {
+    width: 50%;
+    border: none;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.6));
+    padding: 10px;
+}
+
+.Encabezado button {
+    background-color: #FEAEBB;
+    border: none;
+    color: white;
+    z-index: 9; 
+}
+
+.Tar_Contenedor {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    margin-top: 5%;
+    justify-items: center;
+    gap: 15px;
+}
+
+.Tarjeta {
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 400px;
+}
+
+.Img_Tarjeta {
+    border-radius: 50px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+}
+
+.Cine {
+    grid-column: 2 / 3;
+}
+
+.Img_Texto {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    margin-top: 25%;
+    font-weight: 100;
+}
+
+.Natu {
+    margin-top: 23%;
+}

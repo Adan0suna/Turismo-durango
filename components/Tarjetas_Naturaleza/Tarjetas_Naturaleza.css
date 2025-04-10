@@ -1,0 +1,190 @@
+.Tarjeta_Naturaleza {
+    width: 100%;
+    height: 100vh;
+    padding: 1% 1%;
+}
+
+.Galeria_Naturaleza_Seccion1 {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Imagenes_Naturaleza {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.Info_Naturaleza_Tarjeta {
+    position: absolute;
+    color: white;
+    width: 98%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Info_Naturaleza_Der {
+    width: 100%;
+    height: 75%;
+    align-content: end;
+}
+
+.Info_Naturaleza_Izq {
+    width: 100%;
+    height: 90%;
+}
+
+.Nombre_Tarjeta_Naturaleza {
+    background-color: #1B1B1B;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 3% 3%;
+}
+
+.Nombre_Tarjeta_Naturaleza h1 {
+    font-size: 90px;
+    font-weight: 400;
+    width: auto;
+    margin: 0%;
+    text-align: center;
+    line-height: 1;
+}
+
+.Desc_Tarjeta_Naturaleza {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1% 1%;
+}
+
+.Desc_Tarjeta_Naturaleza p {
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* Responsive styles for the cards */
+@media screen and (max-width: 1440px) {
+    .Nombre_Tarjeta_Naturaleza h1 {
+        font-size: 80px;
+    }
+    
+    .Desc_Tarjeta_Naturaleza p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Nombre_Tarjeta_Naturaleza h1 {
+        font-size: 70px;
+    }
+    
+    .Desc_Tarjeta_Naturaleza p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Nombre_Tarjeta_Naturaleza h1 {
+        font-size: 60px;
+    }
+    
+    .Desc_Tarjeta_Naturaleza p {
+        font-size: 18px;
+    }
+    
+    .Imagenes_Naturaleza {
+        height: 80vh;
+    }
+    
+    .Tarjeta_Naturaleza {
+        height: 80vh;
+    }
+    
+    .Info_Naturaleza_Tarjeta {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Nombre_Tarjeta_Naturaleza h1 {
+        font-size: 48px;
+    }
+    
+    .Desc_Tarjeta_Naturaleza p {
+        font-size: 16px;
+    }
+    
+    .Imagenes_Naturaleza {
+        height: 70vh;
+    }
+    
+    .Tarjeta_Naturaleza {
+        height: 70vh;
+    }
+    
+    .Info_Naturaleza_Tarjeta {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Galeria_Naturaleza_Seccion1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Nombre_Tarjeta_Naturaleza h1 {
+        font-size: 40px;
+    }
+    
+    .Desc_Tarjeta_Naturaleza p {
+        font-size: 14px;
+    }
+    
+    .Imagenes_Naturaleza {
+        height: 33.33vh;
+    }
+    
+    .Tarjeta_Naturaleza {
+        height: auto;
+        padding: 0;
+    }
+    
+    .Info_Naturaleza_Tarjeta {
+        position: relative;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 10px 0;
+    }
+    
+    .Info_Naturaleza_Der, 
+    .Info_Naturaleza_Izq {
+        width: 100%;
+        height: auto;
+    }
+    
+    .Nombre_Tarjeta_Naturaleza {
+        margin: 10px;
+    }
+    
+    .Desc_Tarjeta_Naturaleza {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Nombre_Tarjeta_Naturaleza h1 {
+        font-size: 32px;
+    }
+    
+    .Desc_Tarjeta_Naturaleza p {
+        font-size: 12px;
+    }
+}

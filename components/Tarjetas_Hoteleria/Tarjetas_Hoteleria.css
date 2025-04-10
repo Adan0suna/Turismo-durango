@@ -1,0 +1,318 @@
+.Hoteleria_Tarjeta {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 600px;
+  margin-bottom: 30px; /* Added division between cards */
+  border-bottom: 1px solid #333; /* Added division line */
+  padding-bottom: 20px; /* Added padding for division */
+}
+ 
+.TarjetaH_Izq {
+  grid-column: 1;
+  background-color: #161616;
+  color: white;
+  width: 100%;
+  padding-left: 3%;
+  padding-top: 4%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Izq_Izq {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1;
+}
+
+.Hotel_Nombre h3 {
+  font-size: 50px;
+  text-align: center;
+  width: 90%;
+  margin: 0%;
+  font-weight: 300;
+}
+
+.Hotel_Info h3 {
+  font-size: 25px;
+  width: 90%;
+  text-align: center;
+  font-weight: 200;
+}
+
+.Hotel_Info {
+  width: 100%;
+}
+
+.Hotel_Lista {
+  width: 100%;
+}
+
+.Hotel_Lista p {
+  font-size: 20px;
+  width: 90%;
+  text-align: center;
+  font-weight: 200;
+}
+
+.Hotel_Estrellas {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  font-size: 35px;
+}
+
+.Izq_Der {
+  width: 100%;
+  height: 97%;
+  z-index: 999;
+  padding-left: 5%;
+  display: flex;
+  align-items: end;
+  grid-column: 2;
+}
+
+.CuadroA {
+  background-color: #b47800;
+  width: 40%;
+  height: 10%;
+  z-index: 999;
+}
+
+.TarjetaH_Der {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+}
+
+.Imagen_Hoteles {
+  position: absolute;
+  z-index: 99;
+  margin-left: -45%;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Hoteleria_Tarjeta2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 600px;
+  margin-bottom: 30px; /* Added division between cards */
+  border-bottom: 1px solid #333; /* Added division line */
+  padding-bottom: 20px; /* Added padding for division */
+}
+
+.TarjetaH_Izq2 {
+  grid-column: 2;
+  background-color: #161616;
+  color: white;
+  width: 100%;
+  padding-left: 3%;
+  padding-top: 4%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Izq_Izq2 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 2;
+}
+
+.Izq_Der2 {
+  width: 100%;
+  height: 97%;
+  z-index: 999;
+  padding-left: 5%;
+  display: flex;
+  align-items: end;
+  grid-column: 1;
+}
+
+.TarjetaH_Der2 {
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0%;
+  padding-left: 15%;
+}
+
+.Imagen_Hoteles2 {
+  position: absolute;
+  z-index: 99;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0%;
+  margin-left: -5%;
+}
+
+.Hotel_Estrellas2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  font-size: 35px;
+}
+
+.CuadroA2 {
+  background-color: #b47800;
+  width: 40%;
+  height: 10%;
+  z-index: 999;
+}
+
+/* Centering carousels */
+.hotel-carousel-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1440px) {
+  .Hotel_Nombre h3 {
+    font-size: 40px;
+  }
+
+  .Hotel_Info h3 {
+    font-size: 22px;
+  }
+
+  .Hotel_Lista p {
+    font-size: 18px;
+  }
+
+  .Hotel_Estrellas,
+  .Hotel_Estrellas2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Hoteleria_Tarjeta,
+  .Hoteleria_Tarjeta2 {
+    height: 500px;
+  }
+
+  .Hotel_Nombre h3 {
+    font-size: 32px;
+  }
+
+  .Hotel_Info h3 {
+    font-size: 20px;
+  }
+
+  .Hotel_Lista p {
+    font-size: 16px;
+  }
+
+  .Hotel_Estrellas,
+  .Hotel_Estrellas2 {
+    font-size: 25px;
+  }
+
+  .Imagen_Hoteles {
+    margin-left: -30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hoteleria_Tarjeta {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .Hoteleria_Tarjeta2 {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .TarjetaH_Izq,
+  .TarjetaH_Izq2 {
+    grid-column: 1;
+    padding: 5% 3%;
+    grid-template-columns: 1fr;
+  }
+
+  .TarjetaH_Der,
+  .TarjetaH_Der2 {
+    grid-column: 1;
+    height: 300px;
+    padding: 0;
+  }
+
+  .Izq_Izq,
+  .Izq_Izq2 {
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .Izq_Der,
+  .Izq_Der2 {
+    display: none;
+  }
+
+  .Imagen_Hoteles,
+  .Imagen_Hoteles2 {
+    position: relative;
+    margin-left: 0;
+    width: 100%;
+    height: 300px;
+  }
+
+  .Hotel_Nombre h3 {
+    font-size: 28px;
+  }
+
+  .Hotel_Info h3 {
+    font-size: 18px;
+  }
+
+  .Hotel_Lista p {
+    font-size: 14px;
+  }
+
+  .Hotel_Estrellas,
+  .Hotel_Estrellas2 {
+    font-size: 20px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Hotel_Nombre h3 {
+    font-size: 24px;
+  }
+
+  .Hotel_Info h3 {
+    font-size: 16px;
+  }
+
+  .Hotel_Lista p {
+    font-size: 12px;
+  }
+
+  .Hotel_Estrellas,
+  .Hotel_Estrellas2 {
+    font-size: 18px;
+  }
+
+  .TarjetaH_Der,
+  .TarjetaH_Der2 {
+    height: 200px;
+  }
+
+  .Imagen_Hoteles,
+  .Imagen_Hoteles2 {
+    height: 200px;
+  }
+}

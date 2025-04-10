@@ -1,0 +1,114 @@
+.Tarjeta {
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    z-index: 999;
+    position: relative;
+    width: 300px;
+  }
+  
+  .Tarjeta_Container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Img_Tarjeta {
+    border-radius: 50px;
+    position: relative;
+    display: block;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 85%);
+  }
+  
+  .Res_Nombre {
+    color: white;
+    font-size: 35px;
+  }
+  
+  .Res_Info {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .Res_Info p {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Estrellas_Contenedor {
+    width: 80%;
+    margin-top: 5px;
+  }
+  
+  /* This ensures the component doesn't change with screen size */
+  @media screen and (max-width: 1200px) {
+    .Res_Info {
+      top: 65%;
+      font-size: 25px;
+    }
+  
+    .Res_Info p {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .Res_Info {
+      top: 65%;
+      font-size: 25px;
+    }
+  
+    .Res_Info p {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Res_Info {
+      top: 65%;
+      font-size: 25px;
+    }
+  
+    .Res_Info p {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .Res_Info {
+      top: 65%;
+      font-size: 25px;
+    }
+  
+    .Res_Info p {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .Res_Info {
+      top: 65%;
+      font-size: 25px;
+    }
+  
+    .Res_Info p {
+      font-size: 35px;
+    }
+  }
+  

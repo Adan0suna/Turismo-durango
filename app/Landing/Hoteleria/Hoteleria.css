@@ -1,0 +1,119 @@
+body {
+    margin: 0%;
+    overflow-x: hidden;
+  }
+   
+  .Hoteleria_Fondo {
+    position: relative;
+  }
+  
+  .Hoteleria_Fondo::before {
+    content: "";
+    position: absolute;
+    background-image: url("/assets/Hoteleria/fiesta_inn.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(50%);
+    z-index: -1;
+  }
+  
+  .Msj_Hoteleria {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 5px;
+  }
+  
+  .Msj_Hoteleria h1 {
+    font-size: 100px;
+    letter-spacing: 10px;
+    font-weight: 200;
+  }
+  
+  .Msj_Hoteleria h2 {
+    margin-top: -10%;
+    font-size: 200px;
+    font-weight: 200;
+  }
+  
+  .MsjH_Fondo {
+    display: flex;
+    font-size: 30px;
+    margin-top: -13%;
+    width: auto;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  .Hoteleria_Seccion1 {
+    height: auto;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 1440px) {
+    .Msj_Hoteleria h1 {
+      font-size: 80px;
+    }
+  
+    .Msj_Hoteleria h2 {
+      font-size: 160px;
+    }
+  
+    .MsjH_Fondo {
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .Msj_Hoteleria h1 {
+      font-size: 60px;
+    }
+  
+    .Msj_Hoteleria h2 {
+      font-size: 120px;
+    }
+  
+    .MsjH_Fondo {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Msj_Hoteleria h1 {
+      font-size: 40px;
+      letter-spacing: 5px;
+    }
+  
+    .Msj_Hoteleria h2 {
+      font-size: 80px;
+    }
+  
+    .MsjH_Fondo {
+      font-size: 16px;
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .Msj_Hoteleria h1 {
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
+  
+    .Msj_Hoteleria h2 {
+      font-size: 60px;
+    }
+  
+    .MsjH_Fondo {
+      font-size: 14px;
+      width: 90%;
+    }
+  }
+  
